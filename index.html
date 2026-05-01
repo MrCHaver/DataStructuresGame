@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data Structure Decision Game</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <h1>Data Structure Decision Game</h1>
+      <p class="subtitle">Read the scenario, vote on the best structure, and reveal the answer for discussion.</p>
+
+      <section class="card" id="game-card">
+        <div class="meta">
+          <span id="round-label">Round 1</span>
+          <button id="next-btn" type="button">Next Scenario</button>
+        </div>
+
+        <h2 id="scenario-title"></h2>
+        <p id="scenario-text"></p>
+
+        <form id="options-form" class="options"></form>
+
+        <div class="actions">
+          <button id="reveal-btn" type="button">Reveal Answer</button>
+          <button id="reset-votes-btn" type="button" class="secondary">Reset Votes</button>
+        </div>
+
+        <section class="results" aria-live="polite">
+          <h3>Class Votes</h3>
+          <ul id="vote-list"></ul>
+          <p id="answer-text" class="answer hidden"></p>
+        </section>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
